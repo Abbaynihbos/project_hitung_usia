@@ -1,6 +1,6 @@
 /* *{
-    margin: 100%;
-    padding: 100%;
+    margin: 0%;
+    padding: 0%;
 } */
 
 body{
@@ -81,11 +81,10 @@ nav ul li a{
     text-decoration: none;
 }
 
-.usia_btn{
-    position:relative;
-    width: 28px;
-    height:28px;
-    left: 20px;
+button i {
+    font-size: 29px;
+    margin-left: 10px;
+
 }
 .my-button{
     background-color: #A6AFF2;
@@ -96,7 +95,7 @@ nav ul li a{
     text-decoration: none;
     display: flex;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 8px 60px;
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s ;
