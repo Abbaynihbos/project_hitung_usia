@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Usia</title>
+    <link rel="stylesheet" href="/static/style01.css">
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <img class="btn_back" src="/static/img/back-arrow.png"> 
+        </a> 
+        <p>Kembali</p>
+    </nav>
+    <h1> Pengecekan usia berdasarkan tahun lahir</h1>
+    <form method="POST" action="/usia">
+        <input type="number" id="tahun_lahir" name="tahun_lahir" required min="1900" max="2100" placeholder="Masukkan Tahun Lahir">
+        <button type="submit">Hitung</button>
+    </form>
+
+    {% if usia is not none and usia > 0 %}
+        <h2>Hasil</h2>
+        <p>Tahun lahir : {{tahun_lahir}}</p>
+        <p>Usia anda saat ini adalah : {{usia}} tahun</p>
+    {% elif usia is not none and usia <= 0 %}
+        <p> Masukkan tahun lahir yang valid !</p>
+    {% endif %}
+
+</body>
+</html>

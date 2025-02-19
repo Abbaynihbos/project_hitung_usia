@@ -1,0 +1,106 @@
+/* General Styles */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/img/Simple\ Shiny.svg);
+    background-size: 2465px;
+    height: 50%;
+    width: 90%;
+}
+
+/* Center Content */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px #fff(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Form Styles */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"],
+input::placeholder{
+    font-style: italic;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus::placeholder{
+    color: #ccc;
+}
+button{
+    padding: 10px;
+    margin: 10px 0;
+    bottom: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button{
+    background-color: #A6AFF2 ;
+    color: rgb(0, 0, 0);
+    border:none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #F5CFA2;
+}
+
+/* Results Section */
+h2{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+nav{
+    margin: 10px;
+    padding: 10px;
+    padding-left: 100%;
+}
+nav p {
+    padding-left: 0;
+    text-decoration: none;
+
+}
+
+nav a .btn_back{
+    height: 60px;
+    width: 60px;
+}
+
+
+
